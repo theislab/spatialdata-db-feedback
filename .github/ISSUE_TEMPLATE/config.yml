@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: SpatialData-DB website
+    url: https://spatialdata-db-web.pages.dev/
+    about: Browse the catalog and the dataset pages.
+  - name: Python client docs
+    url: https://spatialdata-db.readthedocs.io/en/latest/
+    about: Install the client and load datasets in Python.
