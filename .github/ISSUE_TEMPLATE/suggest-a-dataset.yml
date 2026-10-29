@@ -1,0 +1,40 @@
+name: Suggest a dataset
+description: Tell us about a spatial omics dataset you'd like in the catalog.
+title: "[dataset request] "
+labels: ["dataset-request"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Dataset or study title
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link or accession
+      description: Where the data can be downloaded, e.g. a GEO series (GSE...), a Zenodo record or a vendor page.
+    validations:
+      required: true
+  - type: input
+    id: technology
+    attributes:
+      label: Technology
+      placeholder: e.g. Visium HD, Xenium, MERSCOPE, CosMx
+  - type: input
+    id: licence
+    attributes:
+      label: Licence
+      description: The data licence, if you know it, e.g. CC BY 4.0.
+  - type: dropdown
+    id: author
+    attributes:
+      label: Are you an author of this dataset?
+      options:
+        - "No"
+        - "Yes"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: For example why it would be useful, or which samples matter most.

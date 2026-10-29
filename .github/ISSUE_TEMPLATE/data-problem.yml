@@ -1,0 +1,25 @@
+name: Data problem
+description: Something is wrong with a dataset in the catalog.
+title: "[data] "
+labels: ["data-issue"]
+body:
+  - type: input
+    id: dataset
+    attributes:
+      label: Dataset
+      description: The dataset uid or the link to its page on the website.
+      placeholder: https://spatialdata-db-web.pages.dev/datasets/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong
+      description: For example wrong metadata, a broken viewer, a missing image or a licence that doesn't match the source.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: The correct value, or a link to the source that shows it, if you know it.
